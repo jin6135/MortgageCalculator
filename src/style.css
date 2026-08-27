@@ -1,0 +1,31 @@
+body {
+    margin-left: 2vw;
+}
+
+h1 {
+    font: 30px Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+p, input {
+    display: inline;
+}
+
+/*implemented some currency formatting for the inputs*/
+.currency-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.currency-wrap input {
+    padding-left: 20px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.currency-wrap .symbol {
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    color: #555;
+}

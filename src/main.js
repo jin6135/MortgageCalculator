@@ -5,15 +5,11 @@ const principal = document.getElementById('P');
 const monthlyInterestRate = document.getElementById('r');
 const totalNumMonthlyPayments = document.getElementById('n');
 
-const input = document.getElementById('currency-input');
+const amortization = document.getElementById("amortization");
+const amortizationValue = document.getElementById("amortization-value");
 
-input.addEventListener('input', function (e) {
-    let value = e.target.value.replace(/\D/g, "");
+amortization.addEventListener("input", function () {
+  amortizationValue.textContent = amortization.value;
+});
 
-    value=(value/100).toFixed(2);
-
-    e.target.value = new Intl.NumberFormat('en-US', {
-        minimumFractionDigits:2,
-        maximumFractionDigits:2
-    }).format(value);
-})
+const amortizationYears = Number(amortization.value);

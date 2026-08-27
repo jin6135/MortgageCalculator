@@ -7,25 +7,17 @@ h1 {
     font-weight: bold;
 }
 
+label {
+    font: 16px Helvetica, sans-serif;
+}
+
 p, input {
     display: inline;
+    font: 16px Helvetica, sans-serif;
 }
 
-/*implemented some currency formatting for the inputs*/
-.currency-wrap {
-    position: relative;
-    display: inline-block;
+#amortization, #payment-frequency {
+  width: 150px;
+  height: 35px;
 }
 
-.currency-wrap input {
-    padding-left: 20px;
-    height: 30px;
-    font-size: 16px;
-}
-
-.currency-wrap .symbol {
-    position: absolute;
-    left: 8px;
-    top: 7px;
-    color: #555;
-}

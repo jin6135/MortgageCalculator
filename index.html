@@ -10,21 +10,50 @@
 
     <h1>Canadian Mortgage Calculator</h1>
     <form id = "mortgage-form">
-      <label for="home-price">Home Price (CAD)</label>
+      <label for="home-price">Home Price (CAD): </label>
         <input type="number" id="home-price" min="0" placeholder="0.00"><br>
 
-      <label for="down-payment">Down Payment (CAD)</label>
+      <label for="down-payment">Down Payment (CAD): </label>
         <input type="number" id="down-payment" min="0" placeholder="0.00"><br>
 
-      <label for="interest-rate">Interest Rate (%)</label>
+      <label for="interest-rate">Annual Interest Rate (%): </label>
         <input type="number" id="interest-rate" min="0" step="0.01" placeholder="5.00"><br>
 
-      <label for="amortization">Amortization Period: 
-        <span id="amortization-value">25</span> years
-      </label>
-        <input type="range" id="amortization" min="1" max="30" value="25" step="1"><br>
+      <label for="amortization">Amortization Period: </label>
+      <select id="amortization">
+        <option value="1">1 Year</option>
+        <option value="2">2 Years</option>
+        <option value="3">3 Years</option>
+        <option value="4">4 Years</option>
+        <option value="5">5 Years</option>
+        <option value="6">6 Years</option>
+        <option value="7">7 Years</option>
+        <option value="8">8 Years</option>
+        <option value="9">9 Years</option>
+        <option value="10">10 Years</option>
+        <option value="11">11 Years</option>
+        <option value="12">12 Years</option>
+        <option value="13">13 Years</option>
+        <option value="14">14 Years</option>
+        <option value="15">15 Years</option>
+        <option value="16">16 Years</option>
+        <option value="17">17 Years</option>
+        <option value="18">18 Years</option>
+        <option value="19">19 Years</option>
+        <option value="20">20 Years</option>
+        <option value="21">21 Years</option>
+        <option value="22">22 Years</option>
+        <option value="23">23 Years</option>
+        <option value="24">24 Years</option>
+        <option value="25">25 Years</option>
+        <option value="26">26 Years</option>
+        <option value="27">27 Years</option>
+        <option value="28">28 Years</option>
+        <option value="29">29 Years</option>
+        <option value="30">30 Years</option>
+      </select><br>
 
-      <label for="payment-frequency">Payment Frequency</label>
+      <label for="payment-frequency">Payment Frequency: </label>
       <select id="payment-frequency">
         <option value="12">Monthly</option>
         <option value="26">Bi-weekly</option>
@@ -33,20 +62,6 @@
 
       <button type="submit">Calculate</button>
     </form>
-
-    <!--
-    <p>Monthly Mortgage Payment: </p>
-    <input type="text" id="M" placeholder="Enter a value..."><br>
-
-    <p>Principal (amount borrowed): </p>
-    <input type="text" id="P" placeholder="Enter a value..."><br>
-
-    <p>Monthly Interest Rate: </p>
-    <input type="text" id="r" placeholder="Enter a value..."><br>
-
-    <p>Total Number of Monthly Payments: </p>
-    <input type="text" id="n" placeholder="Enter a value..."><br>
-  -->
 
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>

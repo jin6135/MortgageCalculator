@@ -74,9 +74,9 @@ form.addEventListener("submit", function(event) {
   monthlyPayment.textContent = money.format(M);
 
   paymentLabel.textContent =
-    frequency === 12 ? "/ Monthly" :
-    frequency === 26 ? "/ Bi-weekly" :
-    "/ Weekly";
+    frequency === 12 ? "Monthly" :
+    frequency === 26 ? "Bi-weekly" :
+    "Weekly";
 
   mortgageAmount.textContent = money.format(insurancePrincipal);
   resultDownPayment.textContent = money.format(down);

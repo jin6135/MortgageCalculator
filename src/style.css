@@ -13,12 +13,21 @@ body {
 h1 {
     font: 30px 'Abel', sans-serif;
     font-weight: bold;
+    margin-bottom: 10vh;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
 }
 
 #mortgage-form {
     display: flex;
     flex-direction: column;
-    max-width: 40vh;
+    max-width: 100vh;
 }
 
 .form-row {

@@ -1,23 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
+    font-family: 'Abel', Helvetica, sans-serif;
+    background: #101a3a;
+    color: white;
     margin-left: 2vw;
 }
 
 h1 {
-    font: 30px Helvetica, sans-serif;
+    font: 30px 'Abel', sans-serif;
     font-weight: bold;
 }
 
-label {
-    font: 16px Helvetica, sans-serif;
+#mortgage-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 40vh;
 }
 
-p, input {
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    align-items: center;
+    
+}
+
+/* Deal with styling inside inputs and buttons */
+input[type="number"], select {
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    width: 150px;
+    height: 35px;
+    padding: 0 8px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    width: 100px;
+    height: 38px;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+
+label {
+    font: 16px 'Abel', sans-serif;
+}
+
+p {
     display: inline;
-    font: 16px Helvetica, sans-serif;
+    font: 16px 'Abel', sans-serif;
+}
+
+input {
+    font: 16px 'Abel', sans-serif;
 }
 
 #amortization, #payment-frequency {
-  width: 150px;
-  height: 35px;
+    width: 150px;
+    height: 35px;
 }
 
+.payment-display {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.payment-display h2 {
+    margin: 0;
+}
+
+
+.hidden {
+    display: none !important;
+}
